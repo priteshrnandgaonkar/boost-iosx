@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+echo 'build script'
 ################## SETUP BEGIN
 HOST_ARC=$( uname -m )
 XCODE_ROOT=$( xcode-select -print-path )
@@ -123,8 +124,8 @@ if [[ -f tools/build/src/user-config.jam ]]; then
 fi
 cat >> tools/build/src/user-config.jam <<EOF
 using darwin : ios : clang++ -arch arm64 -fembed-bitcode-marker -isysroot $DEVSYSROOT/SDKs/iPhoneOS.sdk
-: <striper> <root>$DEVSYSROOT 
-: <architecture>arm <target-os>iphone 
+: <striper> <root>$DEVSYSROOT
+: <architecture>arm <target-os>iphone
 ;
 EOF
 cp $ICU_PATH/frameworks/icudata.xcframework/ios-arm64/libicudata.a $ICU_PATH/lib/
@@ -140,8 +141,8 @@ if [[ -f tools/build/src/user-config.jam ]]; then
 fi
 cat >> tools/build/src/user-config.jam <<EOF
 using darwin : iossim : clang++ -arch $HOST_ARC -fembed-bitcode-marker -isysroot $SIMSYSROOT/SDKs/iPhoneSimulator.sdk
-: <striper> <root>$SIMSYSROOT 
-: <architecture>$BOOST_ARC <target-os>iphone 
+: <striper> <root>$SIMSYSROOT
+: <architecture>$BOOST_ARC <target-os>iphone
 ;
 EOF
 cp $ICU_PATH/frameworks/icudata.xcframework/ios-$HOST_ARC-simulator/libicudata.a $ICU_PATH/lib/

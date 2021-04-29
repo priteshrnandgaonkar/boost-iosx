@@ -1,21 +1,18 @@
 Pod::Spec.new do |s|
-    s.name         = "boost-iosx"
-    s.version      = "1.76.0.1"
+    s.name         = "Flipper-Boost-iOSX"
+    s.version      = "1.76.0.1.1"
     s.summary      = "Boost C++ libraries"
-    s.homepage     = "https://github.com/apotocki/boost-iosx"
+    s.homepage     = "https://github.com/priteshrnandgaonkar/boost-iosx"
     s.license      = "Boost Software License"
-    s.author       = { "Alexander Pototskiy" => "alex.a.potocki@gmail.com" }
-    s.social_media_url = "https://www.linkedin.com/in/alexander-pototskiy"
+    s.author       = { "Pritesh Nandgaonkar" => "prit91@fb.com" }
     s.osx.deployment_target = "11.0"
-    s.ios.deployment_target = "12.0"
+    s.ios.deployment_target = "10.0"
     s.osx.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
     s.ios.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
     s.static_framework = true
-    s.prepare_command = "sh scripts/build.sh"
-    s.source       = { :git => "https://github.com/apotocki/boost-iosx.git", :tag => "#{s.version}" }
+    s.source       = { :git => "https://github.com/priteshrnandgaonkar/boost-iosx.git", :branch => "master" }
 
     s.header_mappings_dir = "frameworks/Headers"
-    #s.public_header_files = "frameworks/Headers/**/*.{h,hpp,ipp}"
 
     s.default_subspec = "all"
 
@@ -160,6 +157,4 @@ Pod::Spec.new do |s|
         ss.source_files = "frameworks/Headers/**/*.{h,hpp,ipp}"
         ss.vendored_frameworks = "frameworks/boost_wave.xcframework"
     end
-    #s.preserve_paths = "frameworks/**/*"
-    #s.dependency "icu4c-iosx"
 end
