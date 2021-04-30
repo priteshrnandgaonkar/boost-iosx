@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "Flipper-Boost-iOSX"
-    s.version      = "1.76.0.1.2"
+    s.version      = "1.76.0.1.3"
     s.summary      = "Boost C++ libraries"
     s.homepage     = "https://github.com/priteshrnandgaonkar/boost-iosx"
     s.license      = "Boost Software License"
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
     s.header_mappings_dir = "frameworks/Headers"
 
-    ss.source_files = "frameworks/Headers/**/*.{h,hpp,ipp}"
-    ss.vendored_frameworks = "frameworks/boost_atomic.xcframework", "frameworks/boost_chrono.xcframework", "frameworks/boost_container.xcframework", "frameworks/boost_context.xcframework", "frameworks/boost_contract.xcframework", "frameworks/boost_coroutine.xcframework", "frameworks/boost_date_time.xcframework", "frameworks/boost_exception.xcframework", "frameworks/boost_fiber.xcframework", "frameworks/boost_filesystem.xcframework", "frameworks/boost_graph.xcframework", "frameworks/boost_iostreams.xcframework", "frameworks/boost_json.xcframework", "frameworks/boost_locale.xcframework", "frameworks/boost_log.xcframework", "frameworks/boost_log_setup.xcframework", "frameworks/boost_nowide.xcframework", "frameworks/boost_program_options.xcframework", "frameworks/boost_random.xcframework", "frameworks/boost_regex.xcframework", "frameworks/boost_serialization.xcframework", "frameworks/boost_stacktrace_basic.xcframework", "frameworks/boost_prg_exec_monitor.xcframework", "frameworks/boost_test_exec_monitor.xcframework", "frameworks/boost_unit_test_framework.xcframework", "frameworks/boost_thread.xcframework", "frameworks/boost_timer.xcframework", "frameworks/boost_type_erasure.xcframework", "frameworks/boost_system.xcframework", "frameworks/boost_wave.xcframework"
+    s.source_files = "frameworks/Headers/**/*.{h,hpp,ipp}"
+    s.vendored_frameworks = "frameworks/boost_atomic.xcframework", "frameworks/boost_chrono.xcframework", "frameworks/boost_container.xcframework", "frameworks/boost_context.xcframework", "frameworks/boost_contract.xcframework", "frameworks/boost_coroutine.xcframework", "frameworks/boost_date_time.xcframework", "frameworks/boost_exception.xcframework", "frameworks/boost_fiber.xcframework", "frameworks/boost_filesystem.xcframework", "frameworks/boost_graph.xcframework", "frameworks/boost_iostreams.xcframework", "frameworks/boost_json.xcframework", "frameworks/boost_locale.xcframework", "frameworks/boost_log.xcframework", "frameworks/boost_log_setup.xcframework", "frameworks/boost_nowide.xcframework", "frameworks/boost_program_options.xcframework", "frameworks/boost_random.xcframework", "frameworks/boost_regex.xcframework", "frameworks/boost_serialization.xcframework", "frameworks/boost_stacktrace_basic.xcframework", "frameworks/boost_prg_exec_monitor.xcframework", "frameworks/boost_test_exec_monitor.xcframework", "frameworks/boost_unit_test_framework.xcframework", "frameworks/boost_thread.xcframework", "frameworks/boost_timer.xcframework", "frameworks/boost_type_erasure.xcframework", "frameworks/boost_system.xcframework", "frameworks/boost_wave.xcframework"
 
 end
