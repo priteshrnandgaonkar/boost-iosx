@@ -1,6 +1,5 @@
 /.DS_STORE
 scripts/.DS_Store
-/boost*
 /scripts/ICUdep.xcworkspace
 /scripts/Pods
 /scripts/Podfile.lock
