@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "Flipper-Boost-iOSX"
-    s.version      = "1.76.0.1.4"
+    s.version      = "1.76.0.1.5"
     s.summary      = "Boost C++ libraries"
     s.homepage     = "https://github.com/priteshrnandgaonkar/boost-iosx"
     s.license      = "Boost Software License"
