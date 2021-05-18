@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "Flipper-Boost-iOSX"
-    s.version      = "1.76.0.1.15"
+    s.version      = "1.76.0.1.14"
     s.summary      = "Boost C++ libraries"
     s.homepage     = "https://github.com/priteshrnandgaonkar/boost-iosx"
     s.license      = "Boost Software License"
@@ -9,9 +9,10 @@ Pod::Spec.new do |s|
     s.osx.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
     s.ios.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
     s.static_framework = true
-    s.source       = { :git => "https://github.com/priteshrnandgaonkar/boost-iosx.git", :tag => "1.76.0.1.15" }
+    s.source       = { :git => "https://github.com/priteshrnandgaonkar/boost-iosx.git", :tag => "1.76.0.1.14" }
     s.module_name = 'boost'
     s.header_dir = 'boost'
     s.preserve_path = 'boost'
-    s.source_files = "asm/**/*.S"
+    s.vendored_frameworks = "frameworks/boost_context.xcframework",  "frameworks/boost_filesystem.xcframework", "frameworks/boost_program_options.xcframework", "frameworks/boost_regex.xcframework", "frameworks/boost_system.xcframework", "frameworks/boost_thread.xcframework"
+
 end
